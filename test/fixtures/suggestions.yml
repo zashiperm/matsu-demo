@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  client_name: MyString
+  movie_date: 2018-09-12 15:39:03
+  estimates_date: 2018-09-12 15:39:03
+  ai_estimates_date: 2018-09-12 15:39:03
+  close_status: MyString
+  memo: MyString
+  flag: false
+
+two:
+  user_id: MyString
+  client_name: MyString
+  movie_date: 2018-09-12 15:39:03
+  estimates_date: 2018-09-12 15:39:03
+  ai_estimates_date: 2018-09-12 15:39:03
+  close_status: MyString
+  memo: MyString
+  flag: false
