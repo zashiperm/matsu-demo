@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @suggetion.username %>
+</p>
+
+<p>
+  <strong>Customername:</strong>
+  <%= @suggetion.customername %>
+</p>
+
+<p>
+  <strong>Moviedate:</strong>
+  <%= @suggetion.moviedate %>
+</p>
+
+<p>
+  <strong>Estimatedate:</strong>
+  <%= @suggetion.estimatedate %>
+</p>
+
+<p>
+  <strong>Closestatus:</strong>
+  <%= @suggetion.closestatus %>
+</p>
+
+<p>
+  <strong>Memo:</strong>
+  <%= @suggetion.memo %>
+</p>
+
+<p>
+  <strong>Flag:</strong>
+  <%= @suggetion.flag %>
+</p>
+
+<%= link_to 'Edit', edit_suggetion_path(@suggetion) %> |
+<%= link_to 'Back', suggetions_path %>

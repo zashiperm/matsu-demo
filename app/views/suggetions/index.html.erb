@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1>マツダ保険デジタル提案 ご提案状況一覧</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+<%#
+    <th colspan="2" scope="col"></th>
+%>
+      <th scope="col">ご提案</th>
+      <th scope="col">担当名</th>
+      <th scope="col">お客様名</th>
+      <th scope="col">動画ご案内日</th>
+      <th scope="col">お見積り日</th>
+      <th scope="col">AIお見積り日</th>
+      <th scope="col">メモ</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @suggetions.each do |suggetion| %>
+      <tr>
+        <td><%= link_to 'ご提案', edit_suggetion_path(suggetion), class: :"btn btn-primary" %></td>
+<%#
+     <td><%= link_to 'Show', suggetion %></td>
+<%#
+      <td><%= link_to 'Destroy', suggetion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= suggetion.username %></td>
+        <td><%= suggetion.customername %></td>
+        <td><%= (suggetion.moviedate+60*60*9).strftime('%Y/%m/%d %H:%M') %></td>
+        <td><%= (suggetion.estimatedate+60*60*9).strftime('%Y/%m/%d %H:%M') %></td>
+        <td><%= suggetion.closestatus %></td>
+        <td><%= suggetion.memo %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新規ご提案履歴', new_suggetion_path, class: :"btn btn-primary"  %>

@@ -1,0 +1,52 @@
+<%= form_with(model: suggetion, local: true) do |form| %>
+  <% if suggetion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(suggetion.errors.count, "error") %> prohibited this suggetion from being saved:</h2>
+
+      <ul>
+      <% suggetion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :customername %>
+    <%= form.text_field :customername %>
+  </div>
+
+  <div class="field">
+    <%= form.label :moviedate %>
+    <%= form.datetime_select :moviedate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estimatedate %>
+    <%= form.datetime_select :estimatedate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :closestatus %>
+    <%= form.text_field :closestatus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :memo %>
+    <%= form.text_field :memo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flag %>
+    <%= form.check_box :flag %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

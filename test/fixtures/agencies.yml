@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  agency_id: MyString
-  agency_name: MyString
-
-two:
-  agency_id: MyString
-  agency_name: MyString
