@@ -1,41 +1,38 @@
 <h1>マツダ保険デジタル提案</h1>
 </br>
-</br>
-
-  <div class="container">
+<h2><%= @suggetion.username %>様</h2>
     <div class="row">
         <div class="col-sm-3 text-center">
           <%= link_to suggetions_movie_path do %>
-            <%= image_tag("movie.png" , :size => "256x256") %>
+            <%= image_tag("movie.png" , size: :"150x150" , class: :"img-responsive") %>
           </br><h2>ご提案動画</h2>
           <% end %>
           <h3><%= (@suggetion.moviedate+60*60*9).strftime('%Y/%m/%d %H:%M') %></h3>
         </div>
 
         <div class="col-sm-1 d-flex align-items-center">
-            <%= image_tag("arr.png" , :size => "64x64") %>
+            <%= image_tag("arr.png" ,size: :"40x40" ,class: :"img-responsive") %>
         </div>
 
         <div class="col-sm-3 text-center">
           <%= link_to suggetions_estimate_path do %>
-            <%= image_tag("estimate.png" , :size => "256x256") %>
+            <%= image_tag("estimate.png" , size: :"150x150" , class: :"img-responsive center-block") %>
             </br><h2>簡易見積り</h2>
           <% end %>
           <h3><%= (@suggetion.estimatedate+60*60*9).strftime('%Y/%m/%d %H:%M') %></h3>
         </div>
 
         <div class="col-sm-1 d-flex align-items-center">
-            <%= image_tag("arr.png" , :size => "64x64") %>
+            <%= image_tag("arr.png" , size: :"40x40" , class: :"img-responsive center-block") %>
         </div>
 
         <div class="col-sm-3 text-center">
           <%= link_to suggetions_path do %>
-            <%= image_tag("procedure.png" , :size => "256x256") %>
+            <%= image_tag("procedure.png" , size: :"150x150" , class: :"img-responsive center-block") %>
           </br><h2>試算・手続き</h2>
           <% end %>
           <h3><%= (@suggetion.estimatedate+60*60*9).strftime('%Y/%m/%d %H:%M') %></h3>
         </div>
     </div>
-</div>
 </br>
 <%= link_to '一覧に戻る', suggetions_path , class: :"btn btn-primary"%>

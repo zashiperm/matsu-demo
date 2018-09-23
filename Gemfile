@@ -6,6 +6,7 @@ ruby '2.5.0'
 ########################################
 gem 'bootstrap'
 gem 'mysql2'
+gem 'mini_racer'
 ########################################
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

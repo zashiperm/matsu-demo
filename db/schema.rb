@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_09_14_131743) do
 
-  create_table "suggetions", force: :cascade do |t|
+  create_table "suggetions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "username"
     t.string "customername"
     t.datetime "moviedate"
