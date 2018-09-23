@@ -2963,3 +2963,141 @@ Processing by SuggetionsController#edit as HTML
 Completed 200 OK in 115ms (Views: 107.9ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/suggetions/" for 127.0.0.1 at 2018-09-20 18:52:54 -1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naoya/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SuggetionsController#index as HTML
+  Rendering suggetions/index.html.erb within layouts/application
+  [1m[36mSuggetion Load (0.8ms)[0m  [1m[34mSELECT "suggetions".* FROM "suggetions"[0m
+  ↳ app/views/suggetions/index.html.erb:22
+  Rendered suggetions/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 822ms (Views: 799.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/suggetions/1/edit" for 127.0.0.1 at 2018-09-20 18:52:58 -1000
+Processing by SuggetionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSuggetion Load (0.4ms)[0m  [1m[34mSELECT  "suggetions".* FROM "suggetions" WHERE "suggetions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/suggetions_controller.rb:68
+  [1m[36mCACHE Suggetion Load (0.0ms)[0m  [1m[34mSELECT  "suggetions".* FROM "suggetions" WHERE "suggetions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/suggetions_controller.rb:22
+  Rendering suggetions/edit.html.erb within layouts/application
+  Rendered suggetions/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 64ms (Views: 53.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/suggetions/estimate" for 127.0.0.1 at 2018-09-20 18:53:00 -1000
+Processing by SuggetionsController#estimate as HTML
+  Rendering suggetions/estimate.html.erb within layouts/application
+  Rendered suggetions/estimate.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/suggetions/estimate" for 127.0.0.1 at 2018-09-20 18:58:37 -1000
+Processing by SuggetionsController#estimate as HTML
+  Rendering suggetions/estimate.html.erb within layouts/application
+  Rendered suggetions/estimate.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 137ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/suggetions/estimate" for 127.0.0.1 at 2018-09-20 18:59:06 -1000
+Processing by SuggetionsController#estimate as HTML
+  Rendering suggetions/estimate.html.erb within layouts/application
+  Rendered suggetions/estimate.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/suggetions/estimate" for 127.0.0.1 at 2018-09-20 18:59:19 -1000
+Processing by SuggetionsController#estimate as HTML
+  Rendering suggetions/estimate.html.erb within layouts/application
+  Rendered suggetions/estimate.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 167ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/suggetions/estimate" for 127.0.0.1 at 2018-09-20 18:59:21 -1000
+Processing by SuggetionsController#estimate as HTML
+  Rendering suggetions/estimate.html.erb within layouts/application
+  Rendered suggetions/estimate.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 90ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/suggetions/estimate" for 127.0.0.1 at 2018-09-20 18:59:35 -1000
+Processing by SuggetionsController#estimate as HTML
+  Rendering suggetions/estimate.html.erb within layouts/application
+  Rendered suggetions/estimate.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 79ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/suggetions/1/edit" for 127.0.0.1 at 2018-09-20 21:05:04 -1000
+Processing by SuggetionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSuggetion Load (0.8ms)[0m  [1m[34mSELECT  "suggetions".* FROM "suggetions" WHERE "suggetions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/suggetions_controller.rb:68
+  [1m[36mCACHE Suggetion Load (0.0ms)[0m  [1m[34mSELECT  "suggetions".* FROM "suggetions" WHERE "suggetions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/suggetions_controller.rb:22
+  Rendering suggetions/edit.html.erb within layouts/application
+  Rendered suggetions/edit.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 274ms (Views: 186.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/suggetions/estimate" for 127.0.0.1 at 2018-09-20 21:05:38 -1000
+Processing by SuggetionsController#estimate as HTML
+  Rendering suggetions/estimate.html.erb within layouts/application
+  Rendered suggetions/estimate.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 85ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/suggetions" for 127.0.0.1 at 2018-09-20 21:05:41 -1000
+Processing by SuggetionsController#index as HTML
+  Rendering suggetions/index.html.erb within layouts/application
+  [1m[36mSuggetion Load (0.7ms)[0m  [1m[34mSELECT "suggetions".* FROM "suggetions"[0m
+  ↳ app/views/suggetions/index.html.erb:22
+  Rendered suggetions/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 100ms (Views: 93.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/suggetions/1/edit" for 127.0.0.1 at 2018-09-20 21:05:42 -1000
+Processing by SuggetionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSuggetion Load (0.5ms)[0m  [1m[34mSELECT  "suggetions".* FROM "suggetions" WHERE "suggetions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/suggetions_controller.rb:68
+  [1m[36mCACHE Suggetion Load (0.0ms)[0m  [1m[34mSELECT  "suggetions".* FROM "suggetions" WHERE "suggetions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/suggetions_controller.rb:22
+  Rendering suggetions/edit.html.erb within layouts/application
+  Rendered suggetions/edit.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 99ms (Views: 92.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/suggetions/movie" for 127.0.0.1 at 2018-09-20 21:05:44 -1000
+Processing by SuggetionsController#movie as HTML
+  Rendering suggetions/movie.html.erb within layouts/application
+  Rendered suggetions/movie.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/suggetions" for 127.0.0.1 at 2018-09-20 21:05:51 -1000
+Processing by SuggetionsController#index as HTML
+  Rendering suggetions/index.html.erb within layouts/application
+  [1m[36mSuggetion Load (0.2ms)[0m  [1m[34mSELECT "suggetions".* FROM "suggetions"[0m
+  ↳ app/views/suggetions/index.html.erb:22
+  Rendered suggetions/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/suggetions/new" for 127.0.0.1 at 2018-09-20 21:05:59 -1000
+Processing by SuggetionsController#new as HTML
+  Rendering suggetions/new.html.erb within layouts/application
+  Rendered suggetions/_form.html.erb (80.8ms)
+  Rendered suggetions/new.html.erb within layouts/application (85.8ms)
+Completed 200 OK in 134ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/suggetions" for 127.0.0.1 at 2018-09-20 21:06:02 -1000
+Processing by SuggetionsController#index as HTML
+  Rendering suggetions/index.html.erb within layouts/application
+  [1m[36mSuggetion Load (0.6ms)[0m  [1m[34mSELECT "suggetions".* FROM "suggetions"[0m
+  ↳ app/views/suggetions/index.html.erb:22
+  Rendered suggetions/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 0.6ms)
+
+

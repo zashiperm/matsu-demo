@@ -1,2 +1,23 @@
-Hello! estimate.	
-<p><%= @message %></p>
+<h1>マツダ保険デジタル提案 簡易見積り</h1>
+<div class="container">
+    <div class="row simple_estimate">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">年齢</br>31</div>
+        <div class="col-sm-2">車種</br>787B</div>
+        <div class="col-sm-2">用途</br>通勤・通学</div>
+        <div class="col-sm-2">等級</br>15</div>
+        <div class="col-sm-2">免許の色</br>ゴールド</div>
+        <div class="col-sm-1"></div>
+    </div>
+    <div class="row car_image">
+      <div class="col-sm-6 text-center">
+        <%= image_tag("movie.png" , :size => "256x256") %>
+      </div>
+      <div class="col-sm-6 d-flex align-items-center">
+        <h3>あなたの保険料は</h3>
+        </br>月々<h1>3,881円</h1>
+      </div>
+    </div>
+</div>
+</br>
+<%= link_to '一覧に戻る', suggetions_path , class: :"btn btn-primary"%>

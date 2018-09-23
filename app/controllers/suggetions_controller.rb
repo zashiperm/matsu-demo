@@ -73,7 +73,6 @@ class SuggetionsController < ApplicationController
       params.require(:suggetion).permit(:username, :customername, :moviedate, :estimatedate, :closestatus, :memo, :flag)
     end
 
-
     def movie
       @message = "Hello"
     end

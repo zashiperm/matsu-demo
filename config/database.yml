@@ -21,10 +21,10 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: mysql
+  adapter: mysql2
   dencoding: utf8
-  database: mazda-demo
-  pool: 5
-  username: administrator
-  password: administrator
-  host: mazda-demo.c8w3bygvaotp.ap-northeast-1.rds.amazonaws.com
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
